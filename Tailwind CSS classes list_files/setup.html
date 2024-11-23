@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://shuffle.dev/iframe/setup?framework=tailwind -->
+<html lang="en-US" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="facebook-domain-verification" content="auc6fsccvnfhgbtskwecfht6o6njun">
+    <title>Start a new project with one million layouts</title>
+    <meta name="description" content="Generate the website&#39;s structure in a few shuffles and finish it in a visual editor.">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Start a new project with one million layouts">
+    <meta property="og:description" content="Generate the website&#39;s structure in a few shuffles and finish it in a visual editor.">
+    <meta property="og:image" content="https://shuffle.dev/static/img/randomizer-open-graph.png">
+    <meta property="og:url" content="https://shuffle.dev/setup">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Start a new project with one million layouts">
+    <meta name="twitter:description" content="Generate the website&#39;s structure in a few shuffles and finish it in a visual editor.">
+    <meta name="twitter:image:src" content="https://shuffle.dev/static/img/randomizer-open-graph.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://shuffle.dev/vendor/shuffle/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://shuffle.dev/vendor/shuffle/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://shuffle.dev/vendor/shuffle/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./font(1).css">
+    <link rel="stylesheet" href="./tailwindcss.39754857.css">
+    <link rel="stylesheet" href="./shuffle-dev.d6bcbf21.css">
+
+    <script type="text/javascript">
+        if (top === window) {
+            top.location.href = '/setup';
+        }
+    </script>
+</head>
+<body class="antialiased text-body font-body classic-navbar overflow-hidden" data-editor="shuffle">
+<div class="relative" id="randomizer-app">
+    <section class="pt-4 pb-16 overflow-hidden">
+        <div class="container px-4 mx-auto">
+            <div class="bg-brand-section-dashboard rounded-xl shadow-randomizer overflow-hidden" id="shuffle">
+    <div class="flex flex-wrap items-center p-4 bg-randomizer-gray-light border-b border-randomizer-border">
+        <div class="flex flex-wrap justify-between p-3px mr-3 mb-3 md:mb-0 bg-white border border-dashboard-input rounded shadow-randomizer-menu">
+            <button @click.prevent="setActiveFramework(f);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none shadow-button bg-brand-section-dashboard">
+                <img class="h-4 w-auto" alt="Tailwind" src="./tailwind-css.svg">
+            </button><button @click.prevent="setActiveFramework(f);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                <img class="h-4 w-auto" alt="Bootstrap" src="./bootstrap-logo.svg">
+            </button><button @click.prevent="setActiveFramework(f);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                <img class="h-4 w-auto" alt="Bulma" src="./bulma.svg">
+            </button>
+        </div>
+        <div class="relative w-full md:w-56 flex items-center bg-white border border-dashboard-input rounded shadow-randomizer-menu cursor-pointer">
+            <div class="py-2 px-4 pr-10 text-sm truncate ... font-medium flex items-center">
+                <span style="display: none;">Loading libraries...</span>
+                <span class="inline-flex items-center" style="">
+                    <img alt="" class="h-4 mr-2" src="./flex-sign-green.svg">
+                    <span class="font-semibold">Flex</span>
+                </span>
+                <button class="inline-block absolute right-0 bottom-0 mr-3 mb-4 focus:outline-none">
+                    <svg class="text-secondary dark:text-dark-label" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.08335 0.666657C8.75002 0.333323 8.25002 0.333323 7.91669 0.666657L5.00002 3.58332L2.08335 0.666657C1.75002 0.333323 1.25002 0.333323 0.916687 0.666657C0.583354 0.99999 0.583354 1.49999 0.916687 1.83332L4.41669 5.33332C4.58335 5.49999 4.75002 5.58332 5.00002 5.58332C5.25002 5.58332 5.41669 5.49999 5.58335 5.33332L9.08335 1.83332C9.41669 1.49999 9.41669 0.99999 9.08335 0.666657Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="z-50 absolute w-full max-h-80 top-0 mt-12 py-2 px-2 bg-white border border-dashboard-input rounded shadow-randomizer-dropdown overflow-y-auto" style="display: none;">
+                <ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./flex-sign-green.svg">
+                            <span>Flex</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./flaro-icon.svg">
+                            <span>Flaro</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./flow-ico.svg">
+                            <span>Flow</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./gradia-logo.svg">
+                            <span>Gradia</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./casper-ico.svg">
+                            <span>Casper</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./solstice-icon.svg">
+                            <span>Solstice</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./mirga-icon.svg">
+                            <span>Mirga</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./saturn-icon.svg">
+                            <span>Saturn</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./vista-icon.svg">
+                            <span>Vista</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./zanrly-ico.svg">
+                            <span>Zanrly</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./filytreck-icon.svg">
+                            <span>FilyTreck</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./nightsable-ico-2.svg">
+                            <span>Nightsable</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./aurora-icon.svg">
+                            <span>Aurora</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./asitra-logo.svg">
+                            <span>asitrastudio</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./basko-icon.png">
+                            <span>Basko</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./zeus.svg">
+                            <span>Zeus</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./consulty-icon.svg">
+                            <span>Consulty</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./wrexa-logo.svg">
+                            <span>Wrexa</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./zospace.svg">
+                            <span>Zospace</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./logo-icon-nigodo.svg">
+                            <span>Nigodo</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./pstls.svg">
+                            <span>Pstls.</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./boldui.svg">
+                            <span>BoldUI</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./suncealand-icon.svg">
+                            <span>Suncealand</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./bendis.svg">
+                            <span>Bendis</span>
+                        </button>
+                    </li>
+                </ul><ul>
+                    <li class="py-3 px-3 hover:bg-brand-section-dashboard rounded">
+                        <button class="flex items-center font-semibold text-sm focus:outline-none">
+                            <img alt="" class="h-4 mr-2" src="./acros.svg">
+                            <span>Acros</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-between p-3px md:ml-auto mt-3 sm:mt-0 bg-white border border-dashboard-input rounded shadow-randomizer-menu" style="">
+            <div class="rounded-full inline-flex items-center justify-center w-full md:w-auto">
+                <button @click.prevent="setNewColorLibrary(c);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none shadow-button bg-brand-section-dashboard">
+                    <span class="block h-4 w-4 rounded-full bg-flex-green"></span>
+                </button><button @click.prevent="setNewColorLibrary(c);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                    <span class="block h-4 w-4 rounded-full bg-flex-yellow"></span>
+                </button><button @click.prevent="setNewColorLibrary(c);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                    <span class="block h-4 w-4 rounded-full bg-flex-violet"></span>
+                </button><button @click.prevent="setNewColorLibrary(c);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                    <span class="block h-4 w-4 rounded-full bg-flex-blue"></span>
+                </button><button @click.prevent="setNewColorLibrary(c);" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                    <span class="block h-4 w-4 rounded-full bg-flex-red"></span>
+                </button>
+            </div>
+        </div>
+        <form action="https://shuffle.dev/randomizer/project" method="post" id="shuffle-form" target="_parent" rel="noopener">
+            <input type="hidden" name="library" id="shuffle-form-library" value="">
+            <input type="hidden" name="pages" id="shuffle-form-pages" value="">
+        </form>
+    </div>
+    
+    <div class="relative p-4 bg-white">
+        <div class="flex -mx-2 overflow-x-auto">
+            <div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-randomizer-blue-light border-brand-blue">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz.webp" alt="header"><img class="w-full" src="./05_awz.webp" alt="logo-clouds"><img class="w-full" src="./08_awz.webp" alt="features"><img class="w-full" src="./02_awz(1).webp" alt="call-to-action"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group text-brand-blue">
+                        <span class="pr-2 capitalize">landing</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./05_awz(1).webp" alt="team"><img class="w-full" src="./02_awz(3).webp" alt="blog"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">about</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz.webp" alt="header"><img class="w-full" src="./02_awz(3).webp" alt="blog"><img class="w-full" src="./06_awz.webp" alt="sign-in"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">blog</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./01_awz.webp" alt="content"><img class="w-full" src="./02_awz(1).webp" alt="call-to-action"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">blog-post</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./03_awz(1).webp" alt="http-codes"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">http-codes</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./03_awz(2).webp" alt="application"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">apps</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./02_awz(4).webp" alt="pricing"><img class="w-full" src="./01_awz(1).webp" alt="faq"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">pricing</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div><div class="flex">
+                <div class="p-2">
+                    <div @click.prevent="setActivePage(p)" class="relative mb-2 h-27 w-27 p-2px border rounded cursor-pointer bg-brand-section-dashboard hover:bg-blueGray-200 border-dashboard-input hover:border-blueGray-300">
+                        <div class="relative bg-brand-section-dashboard p-2 pb-0 w-full h-full rounded overflow-hidden">
+                            <div class="absolute top-0 right-0 left-0 p-2 pb-0 w-full rounded-t overflow-hidden">
+                                <img class="w-full rounded-t" src="./02_awz(2).webp" alt="navigation"><img class="w-full" src="./03_awz(3).webp" alt="testimonials"><img class="w-full" src="./05_awz.webp" alt="logo-clouds"><img class="w-full" src="./03_awz.webp" alt="footer">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h4 class="relative font-medium text-xs group">
+                        <span class="pr-2 capitalize">testimonials</span>
+                        <span @click.prevent="deletePage(p)" class="absolute right-0 bottom-0 hidden group-hover:flex items-center justify-center w-4 h-4 text-randomizer-gray-icon bg-brand-section-dashboard rounded cursor-pointer">×</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="p-2 group cursor-pointer">
+                <div class="mb-2 h-27 w-27 p-2px border-2 border-dashed border-dashboard-input group-hover:border-brand-blue rounded">
+                    <div class="text-randomizer-gray-icon group-hover:text-brand-blue w-full h-full rounded flex items-center justify-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C10.0222 2 8.08879 2.58649 6.44429 3.6853C4.7998 4.78412 3.51808 6.3459 2.7612 8.17317C2.00433 10.0004 1.80629 12.0111 2.19214 13.9509C2.578 15.8907 3.5304 17.6725 4.92893 19.0711C6.32745 20.4696 8.10928 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9996 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4177 20 8.87103 19.5308 7.55543 18.6518C6.23984 17.7727 5.21446 16.5233 4.60896 15.0615C4.00346 13.5997 3.84503 11.9911 4.15371 10.4393C4.4624 8.88743 5.22432 7.46197 6.34314 6.34315C7.46196 5.22433 8.88743 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23984 18.6518 7.55544C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20ZM16 11H13V8C13 7.73478 12.8946 7.48043 12.7071 7.29289C12.5196 7.10536 12.2652 7 12 7C11.7348 7 11.4804 7.10536 11.2929 7.29289C11.1054 7.48043 11 7.73478 11 8V11H8C7.73478 11 7.48043 11.1054 7.29289 11.2929C7.10535 11.4804 7 11.7348 7 12C7 12.2652 7.10535 12.5196 7.29289 12.7071C7.48043 12.8946 7.73478 13 8 13H11V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V13H16C16.2652 13 16.5196 12.8946 16.7071 12.7071C16.8946 12.5196 17 12.2652 17 12C17 11.7348 16.8946 11.4804 16.7071 11.2929C16.5196 11.1054 16.2652 11 16 11Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h4 class="font-medium text-xs text-randomizer-gray-icon group-hover:text-brand-blue">Add page</h4>
+            </div>
+            
+        </div>
+        <div class="mx-auto my-auto  min-h-32 flex items-center hidden">
+            <div class="flex items-center text-randomizer-gray-icon mr-2">
+                <div class="animation-ring">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="relative px-4 pt-4 bg-randomizer-gray-light border-b border-t border-randomizer-border">
+            <div class="flex flex-wrap items-center">
+                <span class="h-10 w-10 mr-3 mb-4 flex items-center justify-center bg-white border border-dashboard-input rounded shadow-randomizer-menu">
+                    <img src="./window.svg" alt="">
+                </span>
+                <h3 class="font-medium text-lg capitalize mb-4">landing</h3>
+                <div class="relative md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-y-1/2 md:-translate-x-1/2 flex flex-wrap items-center w-full md:w-auto mb-4 md:mb-0">
+                    <button id="shuffle-layout" class="group inline-flex justify-center w-full md:w-auto py-2 px-6 xs:py-4 xs:px-8 bg-brand-blue hover:bg-blue-700 text-white text-center font-semibold leading-none rounded-3xl transition duration-100">
+                        <img class="relative h-4 w-4 mr-2" src="./shuffle.svg" alt="">
+                        Randomize!
+                    </button>
+                    <span class="hidden md:inline text-sm text-secondary ml-3">and <a @click.prevent="launchEditor" href="https://shuffle.dev/iframe/setup?framework=tailwind#" class="ml-1 font-semibold underline hover:no-underline">edit project in Shuffle</a></span>
+                    <div class="md:hidden w-full my-2 text-center">
+                        <span class="text-sm text-secondary block my-1">and</span>
+                        <a @click.prevent="launchEditor" href="https://shuffle.dev/iframe/setup?framework=tailwind#" class="flex items-center justify-center text-sm text-secondary font-semibold underline hover:no-underline">edit
+                            project in Shuffle <sup>
+                                <svg class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </sup></a>
+                    </div>
+                </div>
+                <div id="shuffle-types" class="flex items-center justify-between p-3px pb-1 mb-4 mx-auto md:mr-0 bg-white border border-dashboard-input rounded shadow-randomizer-menu">
+                    <button title="Randomize navigations" @click.prevent="setActiveRandomizeType(&#39;navigation&#39;)" class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                        <img src="./navigation-inactive.svg" alt="" class="h-4">
+                        
+                    </button>
+                    <button title="Randomize content" @click.prevent="setActiveRandomizeType(&#39;layout&#39;)" class="w-8 h-8 ml-3px rounded flex items-center justify-center focus:outline-none shadow-button bg-brand-section-dashboard">
+                        <img src="./content-active.svg" alt="" class="h-4">
+                        
+                    </button>
+                    <button title="Randomize footers" @click.prevent="setActiveRandomizeType(&#39;footer&#39;)" class="w-8 h-8 ml-3px rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard">
+                        <img src="./footer-inactive.svg" alt="" class="h-4">
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="px-4">
+            <div class="hidden md:flex flex-wrap -mx-3 pt-4">
+                <div class="relative w-5/12 px-3">
+                    <div class="flex items-center justify-center text-randomizer-gray-icon mb-4">
+                        <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6667 2H3.33334C2.20001 2 1.33334 2.86667 1.33334 4V9.33333C1.33334 10.4667 2.20001 11.3333 3.33334 11.3333H7.33334V12.6667H4.66668C4.26668 12.6667 4.00001 12.9333 4.00001 13.3333C4.00001 13.7333 4.26668 14 4.66668 14H11.3333C11.7333 14 12 13.7333 12 13.3333C12 12.9333 11.7333 12.6667 11.3333 12.6667H8.66668V11.3333H12.6667C13.8 11.3333 14.6667 10.4667 14.6667 9.33333V4C14.6667 2.86667 13.8 2 12.6667 2Z" fill="currentColor"></path>
+                        </svg>
+                        <span class="font-medium text-sm">Desktop 1366px</span>
+                    </div>
+                </div>
+                <div class="relative w-4/12 px-3">
+                    <div class="flex items-center justify-center text-randomizer-gray-icon mb-4">
+                        <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33334 4.66683L1.33334 11.3335C1.33334 12.4668 2.20001 13.3335 3.33334 13.3335L12.6667 13.3335C13.8 13.3335 14.6667 12.4668 14.6667 11.3335L14.6667 4.66683C14.6667 3.5335 13.8 2.66683 12.6667 2.66683L3.33334 2.66683C2.20001 2.66683 1.33334 3.5335 1.33334 4.66683ZM12 8.00016C12 8.40016 11.7333 8.66683 11.3333 8.66683C10.9333 8.66683 10.6667 8.40016 10.6667 8.00016C10.6667 7.60016 10.9333 7.3335 11.3333 7.3335C11.7333 7.3335 12 7.60016 12 8.00016Z" fill="currentColor"></path>
+                        </svg>
+                        <span class="font-medium text-sm">Tablet 778px</span>
+                    </div>
+                </div>
+                <div class="relative w-3/12 px-3">
+                    <div class="flex items-center justify-center text-randomizer-gray-icon mb-4">
+                        <svg class="mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6666 1.3335H5.33331C4.19998 1.3335 3.33331 2.20016 3.33331 3.3335V12.6668C3.33331 13.8002 4.19998 14.6668 5.33331 14.6668H10.6666C11.8 14.6668 12.6666 13.8002 12.6666 12.6668V3.3335C12.6666 2.20016 11.8 1.3335 10.6666 1.3335ZM7.99998 12.0002C7.59998 12.0002 7.33331 11.7335 7.33331 11.3335C7.33331 10.9335 7.59998 10.6668 7.99998 10.6668C8.39998 10.6668 8.66665 10.9335 8.66665 11.3335C8.66665 11.7335 8.39998 12.0002 7.99998 12.0002Z" fill="currentColor"></path>
+                        </svg>
+                        <span class="font-medium text-sm">Mobile 360px</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="inline-flex md:hidden flex-wrap items-center justify-center w-auto p-3px mx-auto mt-4 mb-4 bg-white border border-dashboard-input rounded shadow-randomizer-menu">
+                    <button class="w-8 h-8 rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard text-brand-blue">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6667 2H3.33334C2.20001 2 1.33334 2.86667 1.33334 4V9.33333C1.33334 10.4667 2.20001 11.3333 3.33334 11.3333H7.33334V12.6667H4.66668C4.26668 12.6667 4.00001 12.9333 4.00001 13.3333C4.00001 13.7333 4.26668 14 4.66668 14H11.3333C11.7333 14 12 13.7333 12 13.3333C12 12.9333 11.7333 12.6667 11.3333 12.6667H8.66668V11.3333H12.6667C13.8 11.3333 14.6667 10.4667 14.6667 9.33333V4C14.6667 2.86667 13.8 2 12.6667 2Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <button class="w-8 h-8 ml-3px rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard text-randomizer-gray-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33334 4.66683L1.33334 11.3335C1.33334 12.4668 2.20001 13.3335 3.33334 13.3335L12.6667 13.3335C13.8 13.3335 14.6667 12.4668 14.6667 11.3335L14.6667 4.66683C14.6667 3.5335 13.8 2.66683 12.6667 2.66683L3.33334 2.66683C2.20001 2.66683 1.33334 3.5335 1.33334 4.66683ZM12 8.00016C12 8.40016 11.7333 8.66683 11.3333 8.66683C10.9333 8.66683 10.6667 8.40016 10.6667 8.00016C10.6667 7.60016 10.9333 7.3335 11.3333 7.3335C11.7333 7.3335 12 7.60016 12 8.00016Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <button class="w-8 h-8 ml-3px rounded flex items-center justify-center focus:outline-none hover:bg-brand-section-dashboard text-randomizer-gray-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6666 1.3335H5.33331C4.19998 1.3335 3.33331 2.20016 3.33331 3.3335V12.6668C3.33331 13.8002 4.19998 14.6668 5.33331 14.6668H10.6666C11.8 14.6668 12.6666 13.8002 12.6666 12.6668V3.3335C12.6666 2.20016 11.8 1.3335 10.6666 1.3335ZM7.99998 12.0002C7.59998 12.0002 7.33331 11.7335 7.33331 11.3335C7.33331 10.9335 7.59998 10.6668 7.99998 10.6668C8.39998 10.6668 8.66665 10.9335 8.66665 11.3335C8.66665 11.7335 8.39998 12.0002 7.99998 12.0002Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex md:hidden flex-wrap -mx-3 max-h-160 overflow-y-auto">
+                <div class="relative w-full md:w-5/12 px-3">
+                    <img class="w-full rounded-t" src="./02_awz.webp" alt="header" width="1326" height="777"><img class="w-full" src="./05_awz.webp" alt="logo-clouds" width="1326" height="511"><img class="w-full" src="./08_awz.webp" alt="features" width="1326" height="812"><img class="w-full" src="./02_awz(1).webp" alt="call-to-action" width="1326" height="440"><img class="w-full" src="./03_awz.webp" alt="footer" width="1326" height="380">
+                </div>
+                <div class="relative w-full md:w-4/12 px-3 hidden">
+                    <img class="w-full rounded-t" src="./tablet-02_awz.webp" alt="header" width="880" height="851"><img class="w-full" src="./tablet-05_awz.webp" alt="logo-clouds" width="880" height="773"><img class="w-full" src="./tablet-08_awz.webp" alt="features" width="880" height="790"><img class="w-full" src="./tablet-02_awz(1).webp" alt="call-to-action" width="880" height="494"><img class="w-full" src="./tablet-03_awz.webp" alt="footer" width="880" height="408">
+                </div>
+                <div class="relative w-full md:w-3/12 px-3 hidden">
+                    <img class="w-full rounded-t" src="./mobile-02_awz.webp" alt="header" width="460" height="1077"><img class="w-full" src="./mobile-05_awz.webp" alt="logo-clouds" width="460" height="940"><img class="w-full" src="./mobile-08_awz.webp" alt="features" width="460" height="1028"><img class="w-full" src="./mobile-02_awz(1).webp" alt="call-to-action" width="460" height="528"><img class="w-full" src="./mobile-03_awz.webp" alt="footer" width="460" height="724">
+                </div>
+            </div>
+            <div class="hidden md:flex flex-wrap -mx-3 max-h-160 overflow-y-auto" id="shuffle-page-elements">
+                <div class="relative w-full md:w-5/12 px-3">
+                    <img class="w-full rounded-t" src="./02_awz.webp" alt="header" width="1326" height="777"><img class="w-full" src="./05_awz.webp" alt="logo-clouds" width="1326" height="511"><img class="w-full" src="./08_awz.webp" alt="features" width="1326" height="812"><img class="w-full" src="./02_awz(1).webp" alt="call-to-action" width="1326" height="440"><img class="w-full" src="./03_awz.webp" alt="footer" width="1326" height="380">
+                </div>
+                <div class="hidden md:block relative w-full md:w-4/12 px-3">
+                    <img class="w-full rounded-t" src="./tablet-02_awz.webp" alt="header" width="880" height="851"><img class="w-full" src="./tablet-05_awz.webp" alt="logo-clouds" width="880" height="773"><img class="w-full" src="./tablet-08_awz.webp" alt="features" width="880" height="790"><img class="w-full" src="./tablet-02_awz(1).webp" alt="call-to-action" width="880" height="494"><img class="w-full" src="./tablet-03_awz.webp" alt="footer" width="880" height="408">
+                </div>
+                <div class="hidden md:block relative w-full md:w-3/12 px-3">
+                    <img class="w-full rounded-t" src="./mobile-02_awz.webp" alt="header" width="460" height="1077"><img class="w-full" src="./mobile-05_awz.webp" alt="logo-clouds" width="460" height="940"><img class="w-full" src="./mobile-08_awz.webp" alt="features" width="460" height="1028"><img class="w-full" src="./mobile-02_awz(1).webp" alt="call-to-action" width="460" height="528"><img class="w-full" src="./mobile-03_awz.webp" alt="footer" width="460" height="724">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+        </div>
+    </section>
+</div>
+    <script>
+        window.dataSources = {
+            libraries: '/a/libraries',
+        };
+    </script>
+    <script src="./runtime.a53a2797(1).js.download" defer=""></script><script src="./landing.cf1487e1(1).js.download" defer=""></script>
+    <script src="./randomizer.86fca05a.js.download" defer=""></script>
+
+
+</body></html>
