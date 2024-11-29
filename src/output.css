@@ -666,7 +666,7 @@ video {
 }
 
 .contactlink a {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 15px;
   padding: 2px;
   font-size: smaller;
@@ -702,11 +702,6 @@ video {
     width: 70px;
     position: relative;
     top: -13px;
-  }
-
-  .intro {
-    background-color: black;
-    color: white;
   }
 
   .right {
@@ -752,7 +747,7 @@ video {
 
   .contactlink a{
     display: flex;
-    border: 0.2px solid black;
+    border: 0.5px solid black;
     align-self: center;
     border-radius: 10px;
     padding: 1px;

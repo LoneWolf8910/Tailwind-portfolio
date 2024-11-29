@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap"
+        rel="stylesheet">
 </head>
 <style>
     .overlay {
@@ -67,8 +83,8 @@
 </style>
 
 <body>
-    <nav class="flex justify-between align-middle top w-full">
-        <img src="svgs/logo-slack-svgrepo-com.svg" alt="tailwind-css" class="logo">
+    <nav class="top flex justify-between w-full align-middle">
+        <img src="svgs/logo-slack-svgrepo-com.svg" alt="tailwind-css" class="m-auto logo">
         <!-- <a href="#">
             <img src="svgs/burger-menu-svgrepo-com.svg" alt="Hamburg" width="40px" class="hamburg_place"> -->
         <div id="myNav" class="overlay">
@@ -76,7 +92,7 @@
             <div class="overlay-content">
                 <a href="#">About</a>
                 <a href="#">Services</a>
-                <a href="#">Clients</a>
+                <a href="#">Projects</a>
                 <a href="#">Contact</a>
             </div>
         </div>
@@ -85,55 +101,238 @@
         </span>
         <!-- </a> -->
     </nav>
-    <hr class="hr_nav text-black border-black">
+    <hr class="border-black text-black hr_nav">
 
     <section class="intro">
-        <div class="right">
-            <h1 class="font-bold text-black">
-                Saurav Singh. <br>
-                <!-- <h2>Web Developer</h2> -->
-                <span id="element"></span>
-            </h1>
-            <div class="left">
-                I create websites that is both asthetically pleasing and emotionally resonant. I also design Websites
-                that are intuitive and user friendly.
+        <div class="startsec">
+            <div class="right">
+                <h1 class="font-bold text-black">
+                    Saurav Singh. <br>
+                    <span id="element"></span>
+                </h1>
+                <div class="left">
+                    I create websites that is both asthetically pleasing and emotionally resonant. I also design
+                    Websites
+                    that are intuitive and user friendly.
+                    <div class="flex justify-center contacts">
+                        <ul class="flex justify-center link">
+                            <li class="contactlink"><a href="#">Instagram</a></li>
+                            <li class="contactlink"><a href="#">LinkedIn</a></li>
+                            <li class="contactlink"><a href="#">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="contacts flex justify-center">
-            <ul class="link flex justify-center">
-                <li class="contactlink"><a href="#">Instagram</a></li>
-                <li class="contactlink"><a href="#">LinkedIn</a></li>
-                <li class="contactlink"><a href="#">GitHub</a></li>
-            </ul>
         </div>
     </section>
 
+    <section class="img_sec">
+        <div class="grid-maze">
+            <div class="grid-item item1"></div>
+            <div class="grid-item item2"></div>
+            <div class="grid-item item3"></div>
+            <div class="grid-item item4"></div>
+            <div class="grid-item item5"></div>
+            <div class="grid-item item6"></div>
+            <div class="grid-item item7"></div>
+        </div>
+    </section>
+
+    <section class="sec">
+        <div class="flex headsec">
+            <img src="/svgs/turn-right.svg" alt="->">
+            <h3 class="text-slate-700 h3 head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WORK EXPERIENCE:</h3>
+        </div>
+        <div class="secexp">
+            <div class="expbars"></div>
+            <!-- <ul class="exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/java.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/c.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/c++.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/html5.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/css3.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+                <li class="flex expbar">
+                    <img src="img/IMAGEs/javascript.png" alt="" width="35px" class="marginofbars">
+                    <div class="flex titleofbar">
+                        <h3></h3>
+                    </div>
+
+                </li>
+                <hr class="border-black text-black hr_exp">
+            </ul> -->
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/java.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">Java</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/c.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">C language</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/c++.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">C++</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/html5.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">HTML 5</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/css3.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">CSS 3</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">
+                <div class="flex">
+                    <img src="/img/IMAGEs/javascript.png" alt="" width="30px" class="imgexp">
+                    <h3 class="h3-exp">JavaScript</h3>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="projects sec_secon">
+        <div class="flex headsec">
+            <img src="/svgs/turn-right.svg" alt="->">
+            <h3 class="text-slate-700 h3 head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROJECTS:</h3>
+        </div>
+        <div class="gridcards">
+            <div class="bg-slate-300 card">
+                <div class="projectimg">
+                    <img src="img/IMAGEs/Netflixc1.png" alt="NetflixCLone PNG">
+                </div>
+                <div class="name">
+                    <h2 class="text-gray-600">NetFlix Clone</h2>
+                    <h4>Made using HTML5, CSS3 & JS</h4>
+                </div>
+                <div class="flex justify-center links">
+                    <a href="#" class="github">
+                        <img src="svgs/github-142-svgrepo-com.svg" alt="GitHUb" width="40px">
+                    </a>
+                    <a href="#" class="deplyed">
+                        <img src="svgs/link-svgrepo-com.svg" alt="D-Link" width="40px">
+                    </a>
+                </div>
+            </div>
+            <div class="bg-slate-300 card">
+                <div class="projectimg">
+                    <img src="img/IMAGEs/spotifyoldc2.png" alt="SpotifyOldClone PNG">
+                </div>
+                <div class="name">
+                    <h2 class="text-gray-600">Spotify Clone - Working</h2>
+                    <h4>Made using HTML5, CSS3 & JS</h4>
+                </div>
+                <div class="flex justify-center links">
+                    <a href="#" class="github">
+                        <img src="svgs/github-142-svgrepo-com.svg" alt="GitHUb" width="40px">
+                    </a>
+                    <a href="#" class="deplyed">
+                        <img src="svgs/link-svgrepo-com.svg" alt="D-Link" width="40px">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
+    <footer>
+        <div class="textenter" style="background-color: black; padding: 0px; margin: 0px 0px;;">
+            www.sauravportfolio.com | &copy; Copyright @2024 | All Rights Reserved.
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
     <script>
         function openNav() {
@@ -145,11 +344,69 @@
         }
     </script>
 
+    <style>
+        .accordion {
+            background-color: #a5a4a40f;
+            color: #444;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 8px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #afadad;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #7e7e7e;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer.', ' Programmer', ' Web Designer.'],
+            strings: ['Web Designer. ', ' Programmer. ', 'Web Developer. '],
             typeSpeed: 30,
         });
     </script>
